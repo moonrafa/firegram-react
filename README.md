@@ -1,4 +1,4 @@
-# Firegram - photo gallery
+# Firegram - photo App
 
 ## Tools
 
