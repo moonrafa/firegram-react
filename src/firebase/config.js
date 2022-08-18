@@ -1,23 +1,20 @@
-import * as firebase from 'firebase/app'
-import { initializeApp } from 'firebase/app'
-import 'firebase/storage'
-import 'firebase/firestore'
+import firebase from 'firebase/compat/app'
 
-require('dotenv').config()
+import 'firebase/compat/storage'
+import 'firebase/compat/firestore'
 
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  projectId: process.env.PROJECT_ID,
-  storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  appId: process.env.APP_ID
+  apiKey: 'AIzaSyAvaN_gx57D04TYRv_-T2MNOqSCFMqsUyk',
+  authDomain: 'firegram-react-747a6.firebaseapp.com',
+  projectId: 'firegram-react-747a6',
+  storageBucket: 'firegram-react-747a6.appspot.com',
+  messagingSenderId: '829320860836',
+  appId: '1:829320860836:web:5da330908648d1542c8231'
 }
-console.log(firebaseConfig)
-
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig)
 const storage = firebase.storage()
 const firestore = firebase.firestore()
+const timestamp = firebase.firestore.FieldValue.serverTimestamp
 
-export { storage, firestore }
+export { storage, firestore, timestamp }
