@@ -2,8 +2,9 @@ import React from 'react'
 import { useEffect } from 'react'
 import useStorage from '../hooks/useStorage'
 import { motion } from 'framer-motion'
+
 const ProgressBar = ({ file, setFile }) => {
-  const { progress, url } = useStorage(file)
+  const { url, progress } = useStorage(file)
 
   useEffect(() => {
     if (url) {
