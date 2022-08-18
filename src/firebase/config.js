@@ -3,7 +3,7 @@ import firebase from 'firebase/compat/app'
 import 'firebase/compat/storage'
 import 'firebase/compat/firestore'
 
-const firebaseConfig = {
+var firebaseConfig = {
   apiKey: 'AIzaSyAvaN_gx57D04TYRv_-T2MNOqSCFMqsUyk',
   authDomain: 'firegram-react-747a6.firebaseapp.com',
   projectId: 'firegram-react-747a6',
